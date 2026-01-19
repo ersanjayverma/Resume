@@ -1,5 +1,5 @@
 services:
-  blackhat-fe:
+  blackhat-resume:
     image: blackhatbadshah.azurecr.io/vermasj/resume
     ports:
       - "7001:8080"
