@@ -1,0 +1,23 @@
+.portfolio-app[b-9yknn05c7f] {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content[b-9yknn05c7f] {
+    flex: 1;
+    padding-top: 70px;
+}
+
+.portfolio-footer[b-9yknn05c7f] {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #a0a0a0;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.portfolio-footer p[b-9yknn05c7f] {
+    margin: 0;
+    font-size: 0.9rem;
+}

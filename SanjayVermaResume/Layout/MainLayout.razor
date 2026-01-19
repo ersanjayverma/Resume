@@ -1,0 +1,13 @@
+@inherits LayoutComponentBase
+
+<div class="portfolio-app">
+    <NavMenu />
+    <main class="main-content">
+        @Body
+    </main>
+    <footer class="portfolio-footer">
+        <div class="container">
+            <p>&copy; @DateTime.Now.Year Sanjay Verma. Built with Blazor WebAssembly.</p>
+        </div>
+    </footer>
+</div>

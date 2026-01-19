@@ -1,0 +1,6 @@
+services:
+  blackhat-fe:
+    image: blackhatbadshah.azurecr.io/vermasj/resume
+    ports:
+      - "7001:8080"
+    restart: always
