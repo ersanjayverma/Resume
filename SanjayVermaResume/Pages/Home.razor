@@ -583,7 +583,7 @@
         <!-- Certificates Grid -->
         <h3 class="certifications-title">Professional Certifications</h3>
         <div class="certificates-grid">
-            <div class="certificate-card">
+            <div class="certificate-card clickable" @onclick='() => OpenCertificateModal("certs/DSA ADVANCE.png", "Advanced DSA")'>
                 <div class="certificate-image">
                     <img src="certs/DSA ADVANCE.png" alt="Advanced DSA Certification" loading="lazy" />
                 </div>
@@ -593,7 +593,7 @@
                     <span class="cert-issuer">SCALER</span>
                 </div>
             </div>
-            <div class="certificate-card">
+            <div class="certificate-card clickable" @onclick='() => OpenCertificateModal("certs/hld.png", "High Level Design")'>
                 <div class="certificate-image">
                     <img src="certs/hld.png" alt="High Level Design Certification" loading="lazy" />
                 </div>
@@ -603,7 +603,7 @@
                     <span class="cert-issuer">SCALER</span>
                 </div>
             </div>
-            <div class="certificate-card">
+            <div class="certificate-card clickable" @onclick='() => OpenCertificateModal("certs/lld.png", "Low Level Design")'>
                 <div class="certificate-image">
                     <img src="certs/lld.png" alt="Low Level Design Certification" loading="lazy" />
                 </div>
@@ -613,7 +613,7 @@
                     <span class="cert-issuer">SCALER</span>
                 </div>
             </div>
-            <div class="certificate-card">
+            <div class="certificate-card clickable" @onclick='() => OpenCertificateModal("certs/DBS.png", "Complete Databases")'>
                 <div class="certificate-image">
                     <img src="certs/DBS.png" alt="Database Systems Certification" loading="lazy" />
                 </div>
@@ -623,7 +623,7 @@
                     <span class="cert-issuer">SCALER</span>
                 </div>
             </div>
-            <div class="certificate-card">
+            <div class="certificate-card clickable" @onclick='() => OpenCertificateModal("certs/Java.png", "Java Programming")'>
                 <div class="certificate-image">
                     <img src="certs/Java.png" alt="Java Certification" loading="lazy" />
                 </div>
@@ -633,17 +633,17 @@
                     <span class="cert-issuer">SCALER</span>
                 </div>
             </div>
-            <div class="certificate-card">
+            <div class="certificate-card clickable" @onclick='() => OpenCertificateModal("certs/jsb.png", "Java Spring Boot")'>
                 <div class="certificate-image">
-                    <img src="certs/jsb.png" alt="JavaScript Basics Certification" loading="lazy" />
+                    <img src="certs/jsb.png" alt="Java Spring Boot Certification" loading="lazy" />
                 </div>
                 <div class="certificate-info">
-                    <h4>JavaScript Basics</h4>
-                    <p>Frontend Fundamentals</p>
+                    <h4>Java Spring Boot</h4>
+                    <p>Backend Framework</p>
                     <span class="cert-issuer">SCALER</span>
                 </div>
             </div>
-            <div class="certificate-card">
+            <div class="certificate-card clickable" @onclick='() => OpenCertificateModal("certs/Cert1.png", "Professional Certificate")'>
                 <div class="certificate-image">
                     <img src="certs/Cert1.png" alt="Professional Certification" loading="lazy" />
                 </div>
@@ -727,3 +727,41 @@
         </div>
     </div>
 </section>
+
+<!-- Certificate Modal -->
+@if (isModalOpen)
+{
+    <div class="certificate-modal-overlay" @onclick="CloseCertificateModal">
+        <div class="certificate-modal" @onclick:stopPropagation="true">
+            <button class="modal-close-btn" @onclick="CloseCertificateModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </button>
+            <div class="modal-image-container">
+                <img src="@selectedCertificateImage" alt="@selectedCertificateTitle" />
+            </div>
+            <h3 class="modal-title">@selectedCertificateTitle</h3>
+        </div>
+    </div>
+}
+
+@code {
+    private bool isModalOpen = false;
+    private string selectedCertificateImage = "";
+    private string selectedCertificateTitle = "";
+
+    private void OpenCertificateModal(string imagePath, string title)
+    {
+        selectedCertificateImage = imagePath;
+        selectedCertificateTitle = title;
+        isModalOpen = true;
+    }
+
+    private void CloseCertificateModal()
+    {
+        isModalOpen = false;
+        selectedCertificateImage = "";
+        selectedCertificateTitle = "";
+    }
+}
