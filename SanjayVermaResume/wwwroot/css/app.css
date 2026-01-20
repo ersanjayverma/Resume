@@ -1122,7 +1122,7 @@ section {
     border-radius: 12px;
     text-align: center;
     border: 1px solid var(--border-color);
-    max-width: 240px;
+    max-width: 360px;
 }
 
 .qr-card h3 {
@@ -1132,8 +1132,8 @@ section {
 }
 
 .qr-image {
-    width: 160px;
-    height: 160px;
+    width: 280px;
+    height: 280px;
     margin: 0 auto 1rem;
     border-radius: 8px;
     overflow: hidden;
