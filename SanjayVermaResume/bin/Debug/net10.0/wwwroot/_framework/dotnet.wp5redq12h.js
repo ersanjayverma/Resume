@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "SanjayVermaResume",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-TZSXgh7Q7YglJbnB/aPD7iZOKOkpPlo3PXMwUxP7uZM=",
+    "hash": "sha256-uUk52B2/xT7Z0z6H1r29uyF6WiRKryYdvpOdFpIArRQ=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.xanz2e7ksm.js"
@@ -1039,15 +1039,15 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "SanjayVermaResume.wasm",
-        "name": "SanjayVermaResume.i3zle2aj44.wasm",
-        "integrity": "sha256-EuW6jwaJJsPe/7qj7nSshTkaLJoPJ2eTIVtkCIO7s58="
+        "name": "SanjayVermaResume.5nj1i5c7ni.wasm",
+        "integrity": "sha256-T+AkNSFacVruxhLPdDf5Ltfkod3PA3QQN4DuQl7o+ts="
       }
     ],
     "pdb": [
       {
         "virtualPath": "SanjayVermaResume.pdb",
-        "name": "SanjayVermaResume.zfd1smyssj.pdb",
-        "integrity": "sha256-T87/xyh+oZoAP5mhIFO5UWdCdevQBY0prpxcGzC6RVc="
+        "name": "SanjayVermaResume.vrfyoqbx6w.pdb",
+        "integrity": "sha256-WzTmsqdI5qQX/WG7weKbMu3HS8JYFdEt9GYVvTFLtVk="
       }
     ],
     "libraryInitializers": [

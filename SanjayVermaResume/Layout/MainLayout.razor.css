@@ -6,18 +6,5 @@
 
 .main-content {
     flex: 1;
-    padding-top: 70px;
-}
-
-.portfolio-footer {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    color: #a0a0a0;
-    padding: 2rem 0;
-    text-align: center;
-    margin-top: auto;
-}
-
-.portfolio-footer p {
-    margin: 0;
-    font-size: 0.9rem;
+    padding-top: 52px;
 }
