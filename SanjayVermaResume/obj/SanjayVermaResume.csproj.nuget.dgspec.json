@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/home/sj/resume/SanjayVermaResume/SanjayVermaResume.csproj": {}
+    "/home/sanjay/Downloads/Blackhatbadshah-main/SanjayVermaResume/SanjayVermaResume.csproj": {}
   },
   "projects": {
-    "/home/sj/resume/SanjayVermaResume/SanjayVermaResume.csproj": {
+    "/home/sanjay/Downloads/Blackhatbadshah-main/SanjayVermaResume/SanjayVermaResume.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sj/resume/SanjayVermaResume/SanjayVermaResume.csproj",
+        "projectUniqueName": "/home/sanjay/Downloads/Blackhatbadshah-main/SanjayVermaResume/SanjayVermaResume.csproj",
         "projectName": "SanjayVermaResume",
-        "projectPath": "/home/sj/resume/SanjayVermaResume/SanjayVermaResume.csproj",
-        "packagesPath": "/home/sj/.nuget/packages/",
-        "outputPath": "/home/sj/resume/SanjayVermaResume/obj/",
+        "projectPath": "/home/sanjay/Downloads/Blackhatbadshah-main/SanjayVermaResume/SanjayVermaResume.csproj",
+        "packagesPath": "/home/sanjay/.nuget/packages/",
+        "outputPath": "/home/sanjay/Downloads/Blackhatbadshah-main/SanjayVermaResume/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/sj/.nuget/NuGet/NuGet.Config"
+          "/home/sanjay/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,7 +47,7 @@
             "Microsoft.AspNetCore.App.Internal.Assets": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.0, )",
+              "version": "[10.0.2, )",
               "autoReferenced": true
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
@@ -62,19 +61,19 @@
             },
             "Microsoft.DotNet.HotReload.WebAssembly.Browser": {
               "target": "Package",
-              "version": "[10.0.100, )",
+              "version": "[10.0.102, )",
               "autoReferenced": true
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.0, )",
+              "version": "[10.0.2, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.0, )",
+              "version": "[10.0.2, )",
               "autoReferenced": true
             }
           },
@@ -92,7 +91,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[10.0.0, 10.0.0]"
+              "version": "[10.0.2, 10.0.2]"
             }
           ],
           "frameworkReferences": {
@@ -100,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/home/sanjay/.dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
